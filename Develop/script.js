@@ -1,6 +1,9 @@
 // Time/Date goes inside <p> tag w/n <header>
-var clock = moment();
-$("#currentDay").text(clock.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+timeInterval = setInterval(function () {
+  var currentDay = moment();
+  $("#currentDay").text(currentDay.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+}, 1000);
 
-// isn't doing anything
-// class="lead"
+var hour = moment().format("h");
+
+$(".description");
