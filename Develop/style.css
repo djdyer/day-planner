@@ -4,16 +4,20 @@ body {
   line-height: 1;
 }
 
+/* Text input field */
 textarea {
   background: transparent;
   border: none;
-  resize: none;
   color: #000000;
   border-left: 1px solid black;
-  height: 100%;
-  justify-items: flex-start;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
+/* Header Style */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -22,10 +26,11 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+/* Color Block behind text entry  */
 .description {
   white-space: pre-wrap;
   background-color: #d3d3d3;
-  height: 60px;
+  height: 80px;
 }
 
 /* Not needed??! */
@@ -36,9 +41,9 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 60px;
+  height: 80px;
   border-top: 1px solid white;
-  margin: 0;
+  margin: 1px;
 }
 
 .hour {
@@ -55,17 +60,21 @@ textarea {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
-  text-align: center;
-  height: 60px;
+  height: 80px;
 }
 
+/* Lock icon */
 img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 18px;
-  align-items: center;
 }
 
 img:hover {
-  width: 22px;
+  width: 20px;
 }
 
 /* Styling on the date time */

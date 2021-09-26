@@ -5,167 +5,219 @@ timeInterval = setInterval(function () {
 }, 1000);
 
 // // Current hour of the day
-var currentHour = moment().format("hA");
+var currentHour = moment().format("h");
+var currentHourNum = parseInt(currentHour);
 
 // Separate variable for each hour, targets text
-var hour9a = $("#hour9a").text();
-var hour10a = $("#hour10a").text();
-var hour11a = $("#hour11a").text();
-var hour12p = $("#hour12p").text();
-var hour1p = $("#hour1p").text();
-var hour2p = $("#hour2p").text();
-var hour3p = $("#hour3p").text();
-var hour4p = $("#hour4p").text();
-var hour5p = $("#hour5p").text();
+var hour9 = $("#hour9").text();
+var hour10 = $("#hour10").text();
+var hour11 = $("#hour11").text();
+var hour12 = $("#hour12").text();
+var hour13 = $("#hour13").text();
+var hour14 = $("#hour14").text();
+var hour15 = $("#hour15").text();
+var hour16 = $("#hour16").text();
+var hour17 = $("#hour17").text();
 
-console.log(hour9a);
+// Converts hour block text string into integer
+var new9 = parseInt(hour9);
+var new10 = parseInt(hour10);
+var new11 = parseInt(hour11);
+var new12 = parseInt(hour12);
+var new13 = parseInt(hour13);
+var new14 = parseInt(hour14);
+var new15 = parseInt(hour15);
+var new16 = parseInt(hour16);
+var new17 = parseInt(hour17);
 
-// var timeBlock9a = moment("9AM", "hA");
-// var timeBlock10a = moment("10AM", "hA");
-// var timeBlock11a = moment("11AM", "hA");
-// var timeBlock12p = moment("12PM", "hA");
-// var timeBlock1p = moment("1PM", "hA");
-// var timeBlock2p = moment("2PM", "hA");
-// var timeBlock3p = moment("3PM", "hA");
-// var timeBlock4p = moment("4PM", "hA");
-// var timeBlock5p = moment("5PM", "hA");
-
-// console.log(timeBlock5p);
-
-// var currentHour = moment().format("hA");
-console.log(currentHour);
-// console.log(timeBlock9a.isBefore(currentHour));
-// console.log(timeBlock10a.isBefore(currentHour));
-// console.log(timeBlock11a.isBefore(currentHour));
-// console.log(timeBlock12p.isBefore(currentHour));
-// console.log(timeBlock1p.isBefore(currentHour));
-// console.log(timeBlock2p.isBefore(currentHour));
-// console.log(timeBlock3p.isBefore(currentHour));
-// console.log(timeBlock4p.isBefore(currentHour));
-// console.log(timeBlock5p.isBefore(currentHour));
-
+// 9AM BLOCK
 // If future
-if (hour9a > currentHour) {
-  $("#event9a").attr("style", "background-color: #77dd77");
+if (new9 < currentHourNum) {
+  // console.log(new9);
+  // console.log(currentHourNum);
+  $("#event9").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour9a === currentHour) {
-  $("#event9a").attr("style", "background-color: #ff6961");
+if (new9 === currentHourNum) {
+  $("#event9").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour9a < currentHour) {
-  $("#event9a").attr("style", "background-color: #d3d3d3");
+if (new9 > currentHourNum) {
+  $("#event9").attr("style", "background-color: #d3d3d3");
 }
 
+// 10AM BLOCK
 // If future
-if (hour10a > currentHour) {
-  $("#event10a").attr("style", "background-color: #77dd77");
+if (new10 < currentHourNum) {
+  $("#event10").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour10a === currentHour) {
-  $("#event10a").attr("style", "background-color: #ff6961");
+if (new10 === currentHourNum) {
+  $("#event10").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour10a < currentHour) {
-  $("#event10a").attr("style", "background-color: #d3d3d3");
+if (new10 > currentHourNum) {
+  $("#event10").attr("style", "background-color: #d3d3d3");
 }
 
+// 11AM BLOCK
 // If future
-if (hour11a > currentHour) {
-  $("#event11a").attr("style", "background-color: #77dd77");
+if (new11 < currentHourNum) {
+  $("#event11").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour11a === currentHour) {
-  $("#event11a").attr("style", "background-color: #ff6961");
+if (new11 === currentHourNum) {
+  $("#event11").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour11a < currentHour) {
-  $("#event11a").attr("style", "background-color: #d3d3d3");
+if (new11 > currentHourNum) {
+  $("#event11").attr("style", "background-color: #d3d3d3");
 }
 
+// 12PM BLOCK
 // If future
-if (hour12p > currentHour) {
-  $("#event12p").attr("style", "background-color: #77dd77");
+if (new12 < currentHourNum) {
+  $("#event12").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour12p === currentHour) {
-  $("#event12p").attr("style", "background-color: #ff6961");
+if (new12 === currentHourNum) {
+  $("#event12").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour12p < currentHour) {
-  $("#event12p").attr("style", "background-color: #d3d3d3");
+if (new12 > currentHourNum) {
+  $("#event12").attr("style", "background-color: #d3d3d3");
 }
 
+// 1PM BLOCK
 // If future
-if (hour1p > currentHour) {
-  $("#event1p").attr("style", "background-color: #77dd77");
+if (new13 > currentHourNum) {
+  $("#event13").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour1p === currentHour) {
-  $("#event1p").attr("style", "background-color: #ff6961");
+if (new13 === currentHourNum) {
+  $("#event13").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour12p < currentHour) {
-  $("#event1p").attr("style", "background-color: #d3d3d3");
+if (new13 < currentHourNum) {
+  $("#event13").attr("style", "background-color: #d3d3d3");
 }
 
+// 2PM BLOCK
 // If future
-if (hour2p > currentHour) {
-  $("#event2p").attr("style", "background-color: #77dd77");
+if (new14 > currentHourNum) {
+  $("#event14").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour2p === currentHour) {
-  $("#event2p").attr("style", "background-color: #ff6961");
+if (new14 === currentHourNum) {
+  $("#event14").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour2p < currentHour) {
-  $("#event2p").attr("style", "background-color: #d3d3d3");
+if (new14 < currentHourNum) {
+  $("#event14").attr("style", "background-color: #d3d3d3");
 }
 
+// 3PM BLOCK
 // If future
-if (hour3p > currentHour) {
-  $("#event3p").attr("style", "background-color: #77dd77");
+if (new15 > currentHourNum) {
+  $("#event15").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour3p === currentHour) {
-  $("#event3p").attr("style", "background-color: #ff6961");
+if (new15 === currentHourNum) {
+  $("#event15").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour3p < currentHour) {
-  $("#event3p").attr("style", "background-color: #d3d3d3");
+if (new15 < currentHourNum) {
+  $("#event15").attr("style", "background-color: #d3d3d3");
 }
 
+// 4PM BLOCK
 // If future
-if (hour4p > currentHour) {
-  $("#event4p").attr("style", "background-color: #77dd77");
+if (new16 > currentHourNum) {
+  $("#event16").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour4p === currentHour) {
-  $("#event4p").attr("style", "background-color: #ff6961");
+if (new16 === currentHourNum) {
+  $("#event16").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour4p < currentHour) {
-  $("#event4p").attr("style", "background-color: #d3d3d3");
+if (new16 < currentHourNum) {
+  $("#event16").attr("style", "background-color: #d3d3d3");
 }
 
+// 5PM BLOCK
 // If future
-if (hour5p > currentHour) {
-  $("#event5p").attr("style", "background-color: #77dd77");
+if (new17 > currentHourNum) {
+  $("#event17").attr("style", "background-color: #77dd77");
 }
 // If present
-if (hour5p === currentHour) {
-  $("#event5p").attr("style", "background-color: #ff6961");
+if (new17 === currentHourNum) {
+  $("#event17").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (hour5p < currentHour) {
-  $("#event5p").attr("style", "background-color: #d3d3d3");
+if (new17 < currentHourNum) {
+  $("#event17").attr("style", "background-color: #d3d3d3");
 }
 
 // Lock button saves to local storage
-// $(".saveBtn").on("click", storeEvent);
+$("#saveBtn9").on("click", storeEvent9);
+$("#saveBtn10").on("click", storeEvent10);
+$("#saveBtn11").on("click", storeEvent11);
+$("#saveBtn12").on("click", storeEvent12);
+$("#saveBtn13").on("click", storeEvent13);
+$("#saveBtn14").on("click", storeEvent14);
+$("#saveBtn15").on("click", storeEvent15);
+$("#saveBtn16").on("click", storeEvent16);
+$("#saveBtn17").on("click", storeEvent17);
 
-// function storeEvent() {
-//   var hour = $(".hour");
-//   var description = $(".description");
-//   localStorage.setItem("event", hour, description);
-// }
+function storeEvent9() {
+  var entry9 = $("#entry9").val();
+  console.log(entry9);
+  localStorage.setItem("event", entry9);
+}
+
+function storeEvent10() {
+  var entry10 = $("#entry10").val();
+  console.log(entry10);
+  localStorage.setItem("event", entry10);
+}
+
+function storeEvent11() {
+  var entry11 = $("#entry11").val();
+  console.log(entry11);
+  localStorage.setItem("event", entry11);
+}
+
+function storeEvent12() {
+  var entry12 = $("#entry12").val();
+  console.log(entry12);
+  localStorage.setItem("event", entry9);
+}
+
+function storeEvent13() {
+  var entry13 = $("#entry13").val();
+  console.log(entry13);
+  localStorage.setItem("event", entry9);
+}
+
+function storeEvent14() {
+  var entry14 = $("#entry14").val();
+  console.log(entry14);
+  localStorage.setItem("event", entry14);
+}
+
+function storeEvent15() {
+  var entry15 = $("#entry15").val();
+  console.log(entry15);
+  localStorage.setItem("event", entry15);
+}
+
+function storeEvent16() {
+  var entry16 = $("#entry16").val();
+  console.log(entry16);
+  localStorage.setItem("event", entry16);
+}
+function storeEvent17() {
+  var entry17 = $("#entry17").val();
+  console.log(entry17);
+  localStorage.setItem("event", entry17);
+}
