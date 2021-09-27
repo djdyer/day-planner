@@ -169,55 +169,85 @@ $("#saveBtn15").on("click", storeEvent15);
 $("#saveBtn16").on("click", storeEvent16);
 $("#saveBtn17").on("click", storeEvent17);
 
-function storeEvent9() {
+// var events = localStorage.getItem("event")
+// events = JSON.parse(localStorage.getItem("event"))
+//   : [];
+// var entry = document.getElementById("events").value;
+// events.push(entry);
+// localStorage.setItem("event", JSON.stringify(events));
+
+function renderEvents() {
+  localStorage.getItem("event9");
+  localStorage.getItem("event10");
+  localStorage.getItem("event11");
+  localStorage.getItem("event12");
+  localStorage.getItem("event13");
+  localStorage.getItem("event14");
+  localStorage.getItem("event15");
+  localStorage.getItem("event16");
+  localStorage.getItem("event17");
+}
+
+function storeEvent9(event) {
+  event.preventDefault();
   var entry9 = $("#entry9").val();
   console.log(entry9);
-  localStorage.setItem("event", entry9);
+  localStorage.setItem("event9", entry9);
 }
 
-function storeEvent10() {
+function storeEvent10(event) {
+  event.preventDefault();
   var entry10 = $("#entry10").val();
   console.log(entry10);
-  localStorage.setItem("event", entry10);
+  localStorage.setItem("event10", entry10);
 }
 
-function storeEvent11() {
+function storeEvent11(event) {
+  event.preventDefault();
   var entry11 = $("#entry11").val();
   console.log(entry11);
-  localStorage.setItem("event", entry11);
+  localStorage.setItem("event11", entry11);
 }
 
-function storeEvent12() {
+function storeEvent12(event) {
+  event.preventDefault();
   var entry12 = $("#entry12").val();
   console.log(entry12);
-  localStorage.setItem("event", entry9);
+  event.preventDefault();
+  localStorage.setItem("event12", entry12);
 }
 
-function storeEvent13() {
+function storeEvent13(event) {
+  event.preventDefault();
   var entry13 = $("#entry13").val();
   console.log(entry13);
-  localStorage.setItem("event", entry9);
+  localStorage.setItem("event13", entry13);
 }
 
-function storeEvent14() {
+function storeEvent14(event) {
+  event.preventDefault();
   var entry14 = $("#entry14").val();
   console.log(entry14);
-  localStorage.setItem("event", entry14);
+  localStorage.setItem("event14", entry14);
 }
 
-function storeEvent15() {
+function storeEvent15(event) {
+  event.preventDefault();
   var entry15 = $("#entry15").val();
   console.log(entry15);
-  localStorage.setItem("event", entry15);
+  localStorage.setItem("event15", entry15);
 }
 
-function storeEvent16() {
+function storeEvent16(event) {
+  event.preventDefault();
   var entry16 = $("#entry16").val();
   console.log(entry16);
-  localStorage.setItem("event", entry16);
+  localStorage.setItem("event16", entry16);
 }
-function storeEvent17() {
+
+function storeEvent17(event) {
+  event.preventDefault();
   var entry17 = $("#entry17").val();
   console.log(entry17);
-  localStorage.setItem("event", entry17);
+  localStorage.setItem("event17", entry17);
 }
