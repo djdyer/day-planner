@@ -158,7 +158,7 @@ if (new17 < currentHourNum) {
   $("#event17").attr("style", "background-color: #d3d3d3");
 }
 
-// Lock button saves to local storage
+// Lock button saves new event to local storage
 $("#saveBtn9").on("click", storeEvent9);
 $("#saveBtn10").on("click", storeEvent10);
 $("#saveBtn11").on("click", storeEvent11);
@@ -169,24 +169,9 @@ $("#saveBtn15").on("click", storeEvent15);
 $("#saveBtn16").on("click", storeEvent16);
 $("#saveBtn17").on("click", storeEvent17);
 
-// var events = localStorage.getItem("event")
-// events = JSON.parse(localStorage.getItem("event"))
-//   : [];
-// var entry = document.getElementById("events").value;
-// events.push(entry);
-// localStorage.setItem("event", JSON.stringify(events));
-
-function renderEvents() {
-  localStorage.getItem("event9");
-  localStorage.getItem("event10");
-  localStorage.getItem("event11");
-  localStorage.getItem("event12");
-  localStorage.getItem("event13");
-  localStorage.getItem("event14");
-  localStorage.getItem("event15");
-  localStorage.getItem("event16");
-  localStorage.getItem("event17");
-}
+saved9 = $("#entry9").val();
+textArea9 = localStorage.getItem("event9");
+saved9.innerHTML = textArea9;
 
 function storeEvent9(event) {
   event.preventDefault();
@@ -251,3 +236,10 @@ function storeEvent17(event) {
   console.log(entry17);
   localStorage.setItem("event17", entry17);
 }
+
+// var events = localStorage.getItem("event")
+// events = JSON.parse(localStorage.getItem("event"))
+//   : [];
+// var entry = document.getElementById("events").value;
+// events.push(entry);
+// localStorage.setItem("event", JSON.stringify(events));

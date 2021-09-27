@@ -68,15 +68,19 @@ textarea {
 button {
   display: inline-block;
   background-image: url("../../Assets/lock.svg");
-  background-size: contain;
+  background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  width: 25px;
-  height: 30px;
+  width: 20px;
+  height: 25px;
 }
 
 button:hover {
   background-image: url("../../Assets/lock_blk.svg");
+}
+
+button:focus {
+  outline: 0 !important;
 }
 
 /* Styling on the date time */
