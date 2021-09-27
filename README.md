@@ -1,6 +1,6 @@
-## Day Planner
+# Day Planner
 
-# Repo Contents
+## Repo Contents
 
 <li>README.md</li>
 <li>index.html</li>
@@ -10,13 +10,13 @@
 
 <br />
 
-# The Ask
+## The Ask
 
 Using HTML, CSS and JQuery, create a day planner web app that allows the user to save events for each hour of the day.
 
 <br />
 
-# User Story
+## User Story
 
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
@@ -24,7 +24,7 @@ SO THAT I can manage my time effectively
 
 <br />
 
-# Criteria
+## Criteria
 
 ```
 When opening app, the current time/date is displayed.
