@@ -67,7 +67,7 @@ textarea {
 /* Lock icon */
 button {
   display: inline-block;
-  background-image: url("../../Assets/lock.svg");
+  background-image: url("./lock.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-  background-image: url("../../Assets/lock_blk.svg");
+  background-image: url("./lock_blk.svg");
 }
 
 button:focus {
