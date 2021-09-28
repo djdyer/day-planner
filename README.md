@@ -8,7 +8,7 @@
 <li>Assets</li>
 
 <br />
-<img src="./day_planner_screenshot.png">
+<img src="./Assets/day_planner_screenshot.png">
 <br />
 
 ## The Ask
