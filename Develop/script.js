@@ -32,23 +32,23 @@ var new17 = parseInt(hour17);
 
 // 9AM BLOCK
 // If future
-if (new9 < currentHourNum) {
-  // console.log(new9);
-  // console.log(currentHourNum);
+if (new9 > currentHourNum) {
   $("#event9").attr("style", "background-color: #77dd77");
 }
+
 // If present
 if (new9 === currentHourNum) {
   $("#event9").attr("style", "background-color: #ff6961");
 }
+
 // // If passed
-if (new9 > currentHourNum) {
+if (new9 < currentHourNum) {
   $("#event9").attr("style", "background-color: #d3d3d3");
 }
 
 // 10AM BLOCK
 // If future
-if (new10 < currentHourNum) {
+if (new10 > currentHourNum) {
   $("#event10").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -56,13 +56,13 @@ if (new10 === currentHourNum) {
   $("#event10").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new10 > currentHourNum) {
+if (new10 < currentHourNum) {
   $("#event10").attr("style", "background-color: #d3d3d3");
 }
 
 // 11AM BLOCK
 // If future
-if (new11 < currentHourNum) {
+if (new11 > currentHourNum) {
   $("#event11").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -70,13 +70,13 @@ if (new11 === currentHourNum) {
   $("#event11").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new11 > currentHourNum) {
+if (new11 < currentHourNum) {
   $("#event11").attr("style", "background-color: #d3d3d3");
 }
 
 // 12PM BLOCK
 // If future
-if (new12 < currentHourNum) {
+if (new12 > currentHourNum) {
   $("#event12").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -84,13 +84,13 @@ if (new12 === currentHourNum) {
   $("#event12").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new12 > currentHourNum) {
+if (new12 < currentHourNum) {
   $("#event12").attr("style", "background-color: #d3d3d3");
 }
 
 // 1PM BLOCK
 // If future
-if (new13 > currentHourNum) {
+if (new13 < currentHourNum) {
   $("#event13").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -98,13 +98,13 @@ if (new13 === currentHourNum) {
   $("#event13").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new13 < currentHourNum) {
+if (new13 > currentHourNum) {
   $("#event13").attr("style", "background-color: #d3d3d3");
 }
 
 // 2PM BLOCK
 // If future
-if (new14 > currentHourNum) {
+if (new14 < currentHourNum) {
   $("#event14").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -112,13 +112,13 @@ if (new14 === currentHourNum) {
   $("#event14").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new14 < currentHourNum) {
+if (new14 > currentHourNum) {
   $("#event14").attr("style", "background-color: #d3d3d3");
 }
 
 // 3PM BLOCK
 // If future
-if (new15 > currentHourNum) {
+if (new15 < currentHourNum) {
   $("#event15").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -126,13 +126,13 @@ if (new15 === currentHourNum) {
   $("#event15").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new15 < currentHourNum) {
+if (new15 > currentHourNum) {
   $("#event15").attr("style", "background-color: #d3d3d3");
 }
 
 // 4PM BLOCK
 // If future
-if (new16 > currentHourNum) {
+if (new16 < currentHourNum) {
   $("#event16").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -140,13 +140,13 @@ if (new16 === currentHourNum) {
   $("#event16").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new16 < currentHourNum) {
+if (new16 > currentHourNum) {
   $("#event16").attr("style", "background-color: #d3d3d3");
 }
 
 // 5PM BLOCK
 // If future
-if (new17 > currentHourNum) {
+if (new17 < currentHourNum) {
   $("#event17").attr("style", "background-color: #77dd77");
 }
 // If present
@@ -154,7 +154,7 @@ if (new17 === currentHourNum) {
   $("#event17").attr("style", "background-color: #ff6961");
 }
 // // If passed
-if (new17 < currentHourNum) {
+if (new17 > currentHourNum) {
   $("#event17").attr("style", "background-color: #d3d3d3");
 }
 
