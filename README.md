@@ -5,9 +5,10 @@
 <li>README.md</li>
 <li>index.html</li>
 <li>style.css</li>
-<li>assets</li>
-<li>develop</li>
+<li>Assets</li>
 
+<br />
+<img src="./day_planner_screenshot.png">
 <br />
 
 ## The Ask
@@ -40,4 +41,11 @@ Event displayed in block and saved in localStorage.
 All keyed events persist on refresh.
 ```
 
+<br />
+
+## Deployed URL
+
+https://github.com/djdyer/day-planner
+<br />
+https://djdyer.github.io/day-planner
 <br />
