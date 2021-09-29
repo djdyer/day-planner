@@ -29,7 +29,6 @@ textarea {
 /* Color Block behind text entry  */
 .description {
   white-space: pre-wrap;
-  background-color: #d3d3d3;
   height: 80px;
 }
 
@@ -39,6 +38,18 @@ textarea {
   height: 80px;
   border-top: 1px solid white;
   margin: 1px;
+}
+
+.past {
+  background-color: #d3d3d3;
+}
+
+.present {
+  background-color: #ff6961;
+}
+
+.future {
+  background-color: #77dd77;
 }
 
 /* hour column */

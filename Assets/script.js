@@ -5,136 +5,174 @@ timeInterval = setInterval(function () {
 }, 1000);
 
 // // Current hour of the day
-var currentHour = moment().format("h");
-var currentHourNum = parseInt(currentHour);
+// var currentTime = moment().format("hA");
+// console.log(currentTime);
+
+// var hoursArray = [
+//   "9AM",
+//   "10AM",
+//   "11AM",
+//   "12AM",
+//   "13AM",
+//   "14AM",
+//   "15AM",
+//   "16AM",
+//   "17AM",
+// ];
+
+// function timeColor() {
+//   for (var i = 0; i < hoursArray.length; i++);
+//   console.log(timeColor);
+// }
+
+var currentHour = moment().format("hA");
+console.log(currentHour);
+
+var hour9 = $("#hour9").val();
+hour9 += "9AM";
+console.log(hour9);
+
+// moment(currentHour).isAfter(hour9);
+
+function timeColor9() {
+  if (currentHour.isAfter(hour9)) {
+    $("#event9").addClass(".past");
+  } else if (currentHour.isBefore(hour9)) {
+    $("#event9").addClass(".future");
+  } else if (currentHour.isSame(hour9)) {
+    $("#event9").addClass(".present");
+  }
+}
+
+timeColor9();
 
 // 9AM BLOCK
 // If future
-if (currentHourNum > 9) {
-  $("#event9").attr("style", "background-color: #77dd77");
-}
+// if (9 > currentHourNum) {
+//   $("#event9").attr("style", "background-color: #77dd77");
+// }
 
 // If present
-if (currentHourNum === 9) {
-  $("#event9").attr("style", "background-color: #ff6961");
-}
+// if (9 === currentHourNum) {
+//   $("#event9").attr("style", "background-color: #ff6961");
+// }
 
 // // If passed
-if (currentHourNum < 9) {
-  $("#event9").attr("style", "background-color: #d3d3d3");
-}
+// if (9 < currentHourNum) {
+//   $("#event9").attr("style", "background-color: #d3d3d3");
+// }
 
 // 10AM BLOCK
 // If future
-if (currentHourNum > 10) {
-  $("#event10").attr("style", "background-color: #77dd77");
-}
+// if (10 > currentHourNum) {
+//   $("#event10").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 10) {
-  $("#event10").attr("style", "background-color: #ff6961");
-}
+// if (10 === currentHourNum) {
+//   $("#event10").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum < 10) {
-  $("#event10").attr("style", "background-color: #d3d3d3");
-}
+// if (10 < currentHourNum) {
+//   $("#event10").attr("style", "background-color: #d3d3d3");
+// }
 
 // 11AM BLOCK
 // If future
-if (currentHourNum > 11) {
-  $("#event11").attr("style", "background-color: #77dd77");
-}
+// if (11 > currentHourNum) {
+//   $("#event11").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 11) {
-  $("#event11").attr("style", "background-color: #ff6961");
-}
+// if (11 === currentHourNum) {
+//   $("#event11").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum < 11) {
-  $("#event11").attr("style", "background-color: #d3d3d3");
-}
+// if (11 < currentHourNum) {
+//   $("#event11").attr("style", "background-color: #d3d3d3");
+// }
 
 // 12PM BLOCK
 // If future
-if (currentHourNum > 12) {
-  $("#event12").attr("style", "background-color: #77dd77");
-}
+// if (currentHourNum > 12) {
+//   $("#event12").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 12) {
-  $("#event12").attr("style", "background-color: #ff6961");
-}
+// if (currentHourNum === 12) {
+//   $("#event12").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum < 12) {
-  $("#event12").attr("style", "background-color: #d3d3d3");
-}
+// if (currentHourNum < 12) {
+//   $("#event12").attr("style", "background-color: #d3d3d3");
+// }
 
 // 1PM BLOCK
 // If future
-if (currentHourNum < 13) {
-  $("#event13").attr("style", "background-color: #77dd77");
-}
+// if (currentHourNum > 13) {
+//   $("#event13").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 1) {
-  $("#event13").attr("style", "background-color: #ff6961");
-}
+// if (currentHourNum === 1) {
+//   $("#event13").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum > 13) {
-  $("#event13").attr("style", "background-color: #d3d3d3");
-}
+// if (currentHourNum < 13) {
+//   $("#event13").attr("style", "background-color: #d3d3d3");
+// }
 
 // 2PM BLOCK
 // If future
-if (currentHourNum < 14) {
-  $("#event14").attr("style", "background-color: #77dd77");
-}
+// if (currentHourNum > 14) {
+//   $("#event14").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 2) {
-  $("#event14").attr("style", "background-color: #ff6961");
-}
+// if (currentHourNum === 2) {
+//   $("#event14").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum > 14) {
-  $("#event14").attr("style", "background-color: #d3d3d3");
-}
+// if (currentHourNum < 14) {
+//   $("#event14").attr("style", "background-color: #d3d3d3");
+// }
 
 // 3PM BLOCK
 // If future
-if (currentHourNum < 15) {
-  $("#event15").attr("style", "background-color: #77dd77");
-}
+// if (currentHourNum > 15) {
+//   $("#event15").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 3) {
-  $("#event15").attr("style", "background-color: #ff6961");
-}
+// if (currentHourNum === 3) {
+//   $("#event15").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum > 15) {
-  $("#event15").attr("style", "background-color: #d3d3d3");
-}
+// if (currentHourNum < 15) {
+//   $("#event15").attr("style", "background-color: #d3d3d3");
+// }
 
 // 4PM BLOCK
 // If future
-if (currentHourNum < 16) {
-  $("#event16").attr("style", "background-color: #77dd77");
-}
+// if (currentHourNum > 16) {
+//   $("#event16").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 4) {
-  $("#event16").attr("style", "background-color: #ff6961");
-}
+// if (currentHourNum === 4) {
+//   $("#event16").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum > 16) {
-  $("#event16").attr("style", "background-color: #d3d3d3");
-}
+// if (currentHourNum < 16) {
+//   $("#event16").attr("style", "background-color: #d3d3d3");
+// }
 
 // 5PM BLOCK
 // If future
-if (currentHourNum < 17) {
-  $("#event17").attr("style", "background-color: #77dd77");
-}
+// if (currentHourNum > 17) {
+//   $("#event17").attr("style", "background-color: #77dd77");
+// }
 // If present
-if (currentHourNum === 5) {
-  $("#event17").attr("style", "background-color: #ff6961");
-}
+// if (currentHourNum === 5) {
+//   $("#event17").attr("style", "background-color: #ff6961");
+// }
 // // If passed
-if (currentHourNum > 17) {
-  $("#event17").attr("style", "background-color: #d3d3d3");
-}
+// if (currentHourNum < 17) {
+//   $("#event17").attr("style", "background-color: #d3d3d3");
+// }
 
 // Lock button saves new event to local storage
 $("#saveBtn9").on("click", storeEvent9);
